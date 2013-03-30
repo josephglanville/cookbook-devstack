@@ -17,6 +17,10 @@
 # limitations under the License.
 #
 
+package "git" do
+  action :install
+end
+
 git_repo = node["devstack"]["git_repo"]
 
 git "#{git_repo}" do
